@@ -2,7 +2,7 @@ import psycopg2
 
 connection = psycopg2.connect("dbname=postgres user=postgres password=50cent")
 cursor = connection.cursor()
-postgreSQL_select_products_Query = "select * from products"
+postgreSQL_select_products_Query = "SELECT * FROM products"
 
 cursor.execute(postgreSQL_select_products_Query)
 print("Selecting rows from products table using cursor.fetchall")
